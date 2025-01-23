@@ -126,4 +126,4 @@ void sendToDisplay(byte symbol) {
 }
 ```
 **Opis**
-
+Funkcja wysyła określony symbol do 7 - segmentowego wyświetlacza. 
