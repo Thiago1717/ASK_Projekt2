@@ -46,3 +46,4 @@ Projekt systemu alarmowego opartego na mikrokontrolerze ATMega328P (Arduino), kt
 
 ![Schemat połączeń](images/po1wyłącz.png)
 
+---
