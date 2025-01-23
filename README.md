@@ -28,6 +28,12 @@ Projekt systemu alarmowego opartego na mikrokontrolerze ATMega328P (Arduino), kt
 ---
 ## Działanie alarmu
 **Alarm wyłączony** -> żaden czujnik pir nie jest włączony.
+
 ![Schemat połączeń](images/wyłączony.png)
+
+---
+**Alarm włączony** -> conajmniej jeden czujnik pir jest włączony.
+
+![Schemat połączeń](images/włączony.png)
 
 
