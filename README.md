@@ -1,6 +1,6 @@
 # System Alarmowy na ATMega328P
 ![Schemat połączeń](images/schemat.png)
-https://www.tinkercad.com/things/kB7BH8ezySH-askproj2?sharecode=o86rJ7XlRn4ZpE0Tyh85V4lGz5SdO3RtpsPyIC5kAf8
+**Link do projektu w tinkercad**: https://www.tinkercad.com/things/kB7BH8ezySH-askproj2?sharecode=o86rJ7XlRn4ZpE0Tyh85V4lGz5SdO3RtpsPyIC5kAf8
 
 ## Opis projektu
 
