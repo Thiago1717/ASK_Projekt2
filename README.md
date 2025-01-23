@@ -76,7 +76,7 @@ void setup() {
 **Opis**
 Funkcja ustawaia piny czujników PIR, przycisków oraz diod LED, konfiguruję komunikację szeregową a także ustawia piny wyświetlacza.
 
-
+---
 **Funkcja loop()**
 
 ```cpp
