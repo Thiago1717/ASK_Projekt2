@@ -1,6 +1,6 @@
 # System Alarmowy na ATMega328P
 ![Schemat połączeń](images/schemat.png)
-
+https://www.tinkercad.com/things/kB7BH8ezySH-askproj2?sharecode=o86rJ7XlRn4ZpE0Tyh85V4lGz5SdO3RtpsPyIC5kAf8
 
 ## Opis projektu
 
@@ -19,9 +19,9 @@ Projekt systemu alarmowego opartego na mikrokontrolerze ATMega328P (Arduino), kt
 ## Użyte komponenty
 
 - Mikrokontroler **ATMega328P** (np. Arduino UNO/Nano).
-- Czujniki PIR (5 sztuk).
-- Diody LED (5 sztuk).
-- Przyciski (5 sztuk).
+- 5x Czujniki PIR (podłączone do pinów 3, 4, 5, 6, 2).
+- 5x Diody LED (podłączone do pinów A5, A4, A3, A2, A1).
+- 5x Przyciski (podłączone do pinów 8, 9, 10, 11, 12).
 - Wyświetlacz LED (7-segmentowy).
 - 8 - bitowy rejestr przesuwny (do podłączenia wyświetlacza LED).
 - Rezystory, przewody, zasilanie.
