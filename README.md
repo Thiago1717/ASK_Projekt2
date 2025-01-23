@@ -36,4 +36,9 @@ Projekt systemu alarmowego opartego na mikrokontrolerze ATMega328P (Arduino), kt
 
 ![Schemat połączeń](images/włączony.png)
 
+---
+**Wykrywanie ruchu** -> wyświetla liczbę czujników pir które wykryły ruch.
+
+![Schemat połączeń](images/2czuj.png)
+
 
