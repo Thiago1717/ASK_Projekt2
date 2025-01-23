@@ -13,14 +13,13 @@ Projekt systemu alarmowego opartego na mikrokontrolerze ATMega328P (Arduino), kt
   - **Symbol dolnej kreski** oznacza nieaktywny alarm.
 - Na panelu led wyświetlana jest również liczba czujników pir które wykryły ruch, liczba wyświetlana jest dopóki czujnik nie zostanie wyłączony.
 
-System wykorzystuje mikrokontroler ATMega328P jako jednostkę sterującą oraz prosty interfejs użytkownika, co czyni go przystępnym i wszechstronnym rozwiązaniem dla systemów alarmowych.
-
 ---
-## Wymagane komponenty
+## Użyte komponenty
 
 - Mikrokontroler **ATMega328P** (np. Arduino UNO/Nano).
 - Czujniki PIR (5 sztuk).
 - Diody LED (5 sztuk).
+- Przyciski (5 sztuk).
 - Wyświetlacz LED (7-segmentowy).
 - 8 - bitowy rejestr przesuwny (do podłączenia wyświetlacza LED).
 - Rezystory, przewody, zasilanie.
