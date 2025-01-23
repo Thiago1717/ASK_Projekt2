@@ -25,3 +25,5 @@ Projekt systemu alarmowego opartego na mikrokontrolerze ATMega328P (Arduino), kt
 - Rezystory, przewody, zasilanie.
 
 ---
+## Działanie alarmu
+
