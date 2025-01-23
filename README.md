@@ -41,4 +41,8 @@ Projekt systemu alarmowego opartego na mikrokontrolerze ATMega328P (Arduino), kt
 
 ![Schemat połączeń](images/2czuj.png)
 
+---
+**Wyłączenie czujników** -> Gdy czujniki pir wykryją ruch, liczba na ekranie nie zmienia się dopóki, czujnik nie zostanie wyłączony
+
+![Schemat połączeń](images/po1wyłącz.png)
 
