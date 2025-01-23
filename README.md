@@ -56,6 +56,7 @@ Projekt systemu alarmowego opartego na mikrokontrolerze ATMega328P (Arduino), kt
 - sensorEnabled[] - tablica przechowująca stany czujników.
 - motionDetected[] - tablica przechowująca stan wykrycia ruchu.
 - cyfry[5] = {121, 36, 48, 25, 18} - tablica zawierająca wartości binarne cyfr dla wyświetlacza od 1 do 5.
+---
 
 **Funkcja setup()**
 
@@ -70,5 +71,47 @@ void setup() {
   pinMode(latchpin, OUTPUT);
   pinMode(clockpin, OUTPUT);
   Serial.begin(9600);
-} 
+}
+```
+**Opis**
+Funkcja ustawaia piny czujników PIR, przycisków oraz diod LED, konfiguruję komunikację szeregową a także ustawia piny wyświetlacza.
+
+
+**Funkcja loop()**
+
+```cpp
+void loop() {
+  int activeSensorsCount = 0;
+  bool anySensorEnabled = false;
+
+  for (int i = 0; i < numSensors; i++) {
+    if (digitalRead(buttonPins[i]) == LOW) {
+      sensorEnabled[i] = !sensorEnabled[i];
+      if (!sensorEnabled[i]) motionDetected[i] = false;
+      delay(300);
+    }
+
+    digitalWrite(ledPins[i], !sensorEnabled[i]);
+
+    if (sensorEnabled[i]) {
+      anySensorEnabled = true;
+      if (digitalRead(pirPins[i]) == HIGH) motionDetected[i] = true;
+      if (motionDetected[i]) activeSensorsCount++;
+    }
+  }
+
+  if (!anySensorEnabled) {
+    sendToDisplay(dolnaKreska);
+  } else if (activeSensorsCount == 0) {
+    sendToDisplay(gornaKreska);
+  } else {
+    if (activeSensorsCount >= 1 && activeSensorsCount <= 5) {
+      sendToDisplay(cyfry[activeSensorsCount - 1]);
+    }
+  }
+}
+
+```
+**Opis**
+
 
