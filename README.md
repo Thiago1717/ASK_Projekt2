@@ -1,19 +1,17 @@
-# ASK_Projekt2
-
 # System Alarmowy na ATMega328P
 
 ## Opis projektu
 
-Projekt systemu alarmowego opartego na mikrokontrolerze ATMega328P (Arduino), który obsługuje minimum 5 czujników PIR. System umożliwia:
+Projekt systemu alarmowego opartego na mikrokontrolerze ATMega328P (Arduino), który obsługuje 5 czujników PIR. System umożliwia:
 
-- Aktywację/dezaktywację każdego czujnika PIR indywidualnie.
-- Wyświetlanie statusu każdego czujnika na dedykowanych diodach LED:  
-  - **LED świeci**, gdy czujnik PIR jest aktywny.  
-  - **LED zgaszony**, gdy czujnik PIR jest nieaktywny.
-- Wyświetlanie na panelu LED statusu całego alarmu:  
+- Włączenie/wyłączenie każdego z pir.
+- Każdy z czujników pir posiada diode LED:  
+  - **LED świeci**, czujnik jest aktywny.  
+  - **LED zgaszony**, czujnik  jest nieaktywny.
+- Panel led wyświetla status alarmu:  
   - **Symbol górnej kreski** oznacza aktywny alarm.  
   - **Symbol dolnej kreski** oznacza nieaktywny alarm.
-- Liczenie i wyświetlanie na panelu LED liczby czujników, które wykryły ruch od momentu aktywacji alarmu.
+- Na panelu led wyświetlana jest również liczba czujników pir które wykryły ruch, liczba wyświetlana jest dopóki czujnik nie zostanie wyłączony.
 
 System wykorzystuje mikrokontroler ATMega328P jako jednostkę sterującą oraz prosty interfejs użytkownika, co czyni go przystępnym i wszechstronnym rozwiązaniem dla systemów alarmowych.
 
