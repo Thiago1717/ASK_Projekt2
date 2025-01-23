@@ -13,7 +13,7 @@ Projekt systemu alarmowego opartego na mikrokontrolerze ATMega328P (Arduino), kt
 - Panel led wyświetla status alarmu:  
   - **Symbol górnej kreski** oznacza aktywny alarm.  
   - **Symbol dolnej kreski** oznacza nieaktywny alarm.
-- Na panelu led wyświetlana jest również liczba czujników pir które wykryły ruch, liczba wyświetlana jest dopóki czujnik nie zostanie wyłączony.
+- Na panelu led wyświetlana jest również liczba czujników PIR które wykryły ruch, liczba wyświetlana jest dopóki czujnik nie zostanie wyłączony.
 
 ---
 ## Użyte komponenty
@@ -23,27 +23,39 @@ Projekt systemu alarmowego opartego na mikrokontrolerze ATMega328P (Arduino), kt
 - 5x Diody LED (podłączone do pinów A5, A4, A3, A2, A1).
 - 5x Przyciski (podłączone do pinów 8, 9, 10, 11, 12).
 - Wyświetlacz LED (7-segmentowy).
-- 8 - bitowy rejestr przesuwny (do podłączenia wyświetlacza LED).
+- Rejestr przesuwny 74HC595 (do podłączenia wyświetlacza LED).
 - Rezystory, przewody, zasilanie.
 ---
 ## Działanie alarmu
-**Alarm wyłączony** -> Żaden czujnik pir nie jest włączony.
+**Alarm wyłączony** -> Żaden czujnik PIR nie jest włączony.
 
 ![Schemat połączeń](images/wyłączony.png)
 
 ---
-**Alarm włączony** -> Conajmniej jeden czujnik pir jest włączony.
+**Alarm włączony** -> Conajmniej jeden czujnik PIR jest włączony.
 
 ![Schemat połączeń](images/włączony.png)
 
 ---
-**Wykrywanie ruchu** -> Ekran wyświetla liczbę czujników pir które wykryły ruch.
+**Wykrywanie ruchu** -> Ekran wyświetla liczbę czujników PIR które wykryły ruch.
 
 ![Schemat połączeń](images/2czuj.png)
 
 ---
-**Wyłączenie czujników** -> Gdy czujniki pir wykryją ruch, liczba na ekranie nie zmienia się dopóki, czujnik nie zostanie wyłączony
+**Wyłączenie czujników** -> Gdy czujniki PIR wykryją ruch, liczba na ekranie nie zmienia się dopóki, czujnik nie zostanie wyłączony
 
 ![Schemat połączeń](images/po1wyłącz.png)
 
 ---
+
+## Struktura Kodu
+**Deklaracja pinów oraz zmiennych**
+- pirPins[] - tablica przechowująca piny czujników PIR.
+- buttonPins[] - tablica przechowująca piny przycisków.
+- ledPins[] - tablica przechowująca piny diod LED.
+- sensorEnabled[] - tablica przechowująca stany czujników.
+- motionDetected[] - tablica przechowująca stan wykrycia ruchu.
+- cyfry[5] = {121, 36, 48, 25, 18} - tablica zawierająca wartości binarne cyfr dla wyświetlacza od 1 do 5.
+
+  ## Funkcje 
+**Funkcja loop()**
