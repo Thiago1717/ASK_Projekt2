@@ -57,5 +57,5 @@ Projekt systemu alarmowego opartego na mikrokontrolerze ATMega328P (Arduino), kt
 - motionDetected[] - tablica przechowująca stan wykrycia ruchu.
 - cyfry[5] = {121, 36, 48, 25, 18} - tablica zawierająca wartości binarne cyfr dla wyświetlacza od 1 do 5.
 
-  ## Funkcje 
+ # Funkcje 
 **Funkcja loop()**
