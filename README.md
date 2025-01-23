@@ -1,5 +1,5 @@
 # System Alarmowy na ATMega328P
-![Schemat połączeń](images/schemat.png)
+!(images/schemat.png)
 
 ## Opis projektu
 
@@ -24,7 +24,8 @@ Projekt systemu alarmowego opartego na mikrokontrolerze ATMega328P (Arduino), kt
 - Wyświetlacz LED (7-segmentowy).
 - 8 - bitowy rejestr przesuwny (do podłączenia wyświetlacza LED).
 - Rezystory, przewody, zasilanie.
-
 ---
 ## Działanie alarmu
+**Alarm wyłączony** - żaden czujnik pir nie jest włączony.
+
 
