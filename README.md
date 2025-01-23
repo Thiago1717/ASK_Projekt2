@@ -113,5 +113,17 @@ void loop() {
 
 ```
 **Opis**
+Zadaniem funkcji jest sprawdzenie, czy przyciski zostały naciśnięte, przełącza stany czujników oraz aktualizuje diody LED, następnie zlicza wykryte ruchy przez czujniki PIR, po czym wysyła do wyświetlacza.
 
+---
+**Funkcja sendToDisplay()**
+
+```cpp
+void sendToDisplay(byte symbol) {
+  digitalWrite(latchpin, LOW);
+  shiftOut(datapin, clockpin, MSBFIRST, symbol);
+  digitalWrite(latchpin, HIGH);
+}
+```
+**Opis**
 
