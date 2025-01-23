@@ -1,5 +1,5 @@
 # System Alarmowy na ATMega328P
-!(images/schemat.png)
+(images/schemat.png)
 
 ## Opis projektu
 
